@@ -1,4 +1,6 @@
-### Hi there 👋
+### Hi there 👋 , Its Shubham 
+
+### I'm a Master Student , Doing Master In Artificial Intelligence 
 
 - 🔭 I’m currently working on 
 - 🌱 I’m currently learning Artificial Intelligence

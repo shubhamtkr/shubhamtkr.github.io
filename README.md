@@ -8,3 +8,16 @@
 - 🤔 Actively  looking for AI Research role 
 
 
+
+### About Me
+I am a postgraduade research student at Delhi Technological University , doing Mtech in Artificial Intelligence . 
+
+### Acadmic Projects 
+
+### Teaching 
+
+### Publications 
+
+### Reseach Area 
+
+### Thesis

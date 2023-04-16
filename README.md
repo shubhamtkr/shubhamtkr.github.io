@@ -10,7 +10,6 @@
 
 
 ### About Me
-I am a postgraduade research student at Delhi Technological University , doing Mtech in Artificial Intelligence . 
 
 ### Acadmic Projects 
 

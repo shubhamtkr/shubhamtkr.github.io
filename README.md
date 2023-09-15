@@ -9,14 +9,4 @@
 
 
 
-### About Me
 
-### Acadmic Projects 
-
-### Teaching 
-
-### Publications 
-
-### Reseach Area 
-
-### Thesis

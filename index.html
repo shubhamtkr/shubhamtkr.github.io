@@ -6,7 +6,7 @@
   <title>Shubham Thakur | PhD Researcher</title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- FontAwesome for icons -->
+  <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     :root {
@@ -37,95 +37,49 @@
       text-align: center;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    header .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid var(--accent-color);
-      margin: 0 auto 1rem;
-    }
     header h1 { font-size: 2.5rem; font-weight: 600; color: var(--primary-color); }
     header .subtitle { font-size: 1rem; color: var(--subtext-color); margin: 0.25rem 0; }
-    nav {
-      margin-top: 1.5rem;
-      display: inline-flex;
-      gap: 1.5rem;
-      font-weight: 500;
-    }
-    main {
-      flex: 1;
-      width: 90%;
-      max-width: 1000px;
-      margin: 2rem auto;
-    }
+    .social-icons { margin: 1rem 0; }
+    .social-icons a { margin: 0 0.5rem; font-size: 1.5rem; color: var(--accent-color); transition: color var(--transition-speed); }
+    .social-icons a:hover { color: var(--primary-color); }
+    nav { margin-top: 1.5rem; display: inline-flex; gap: 1.5rem; font-weight: 500; }
+    main { flex: 1; width: 90%; max-width: 1000px; margin: 2rem auto; }
     section { margin-bottom: 3rem; }
-    .section-title {
-      font-size: 1.75rem;
-      font-weight: 600;
-      color: var(--primary-color);
-      margin-bottom: 1rem;
-      position: relative;
-      padding-left: 1rem;
-    }
-    .section-title::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 4px;
-      height: 24px;
-      background: var(--accent-color);
-      transform: translateY(-50%);
-      border-radius: 2px;
-    }
-    /* Default paragraphs are left-aligned */
+    .section-title { font-size: 1.75rem; font-weight: 600; color: var(--primary-color); margin-bottom: 1rem; position: relative; padding-left: 1rem; }
+    .section-title::before { content: ''; position: absolute; left: 0; top: 50%; width: 4px; height: 24px; background: var(--accent-color); transform: translateY(-50%); border-radius: 2px; }
     p { margin-bottom: 1rem; text-align: left; }
-    /* Only justify About section text */
     .about-text p { text-align: justify; }
-    /* Cards */
-    .card {
-      background: var(--card-bg);
-      padding: 1.5rem;
-      border-radius: var(--border-radius);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      margin-bottom: 1.5rem;
-    }
-    /* Grid layouts */
+    .card { background: var(--card-bg); padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 2px 6px rgba(0,0,0,0.05); margin-bottom: 1.5rem; }
     .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
     .skills-list { display: flex; flex-wrap: wrap; gap: 0.75rem; }
     .skill-item { background: var(--accent-color); color: #fff; padding: 0.5rem 1rem; border-radius: var(--border-radius); font-size: 0.9rem; }
-    /* Publication links */
     .minimal-link { display: inline-block; margin-top: 0.75rem; font-size: 0.9rem; color: var(--accent-color); border: 1px solid var(--accent-color); border-radius: var(--border-radius); padding: 0.4rem 0.8rem; transition: background var(--transition-speed), color var(--transition-speed); }
     .minimal-link:hover { background: var(--accent-color); color: #fff; }
-    /* Project cards */
-    .project-image { width: 100%; height: auto; border-radius: var(--border-radius); }
     .project-content { display: grid; grid-template-columns: 150px 1fr; gap: 1rem; align-items: start; }
-    /* TA list */
+    .project-image { width: 100%; height: auto; border-radius: var(--border-radius); }
     .ta-list { list-style: none; padding-left: 0; }
     .ta-item { background: var(--card-bg); padding: 1rem; border-radius: var(--border-radius); margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
     .ta-course { font-weight: 500; }
     .ta-term { color: var(--subtext-color); }
-    /* Footer */
     footer { text-align: center; padding: 1rem 0; font-size: 0.9rem; color: var(--subtext-color); }
   </style>
 </head>
 <body>
 <header>
-  
   <h1>Shubham Thakur</h1>
   <div class="subtitle">PhD Candidate, Digital Health @ IIT Bombay</div>
   <div class="subtitle">📧 <a href="mailto:24d1622@iitb.ac.in">24d1622@iitb.ac.in</a></div>
-  <div class="subtitle">
-    <a href="https://linkedin.com/in/shubham-thakur-a84855194" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/shubhamtkr" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://kaggle.com/st3111" target="_blank"><i class="fab fa-kaggle"></i></a>
-    <a href="#"><i class="fas fa-graduation-cap"></i></a>
+  <div class="social-icons">
+    <a href="https://linkedin.com/in/shubham-thakur-a84855194" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/shubhamtkr" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://kaggle.com/st3111" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+    <a href="https://scholar.google.com/" target="_blank" aria-label="Google Scholar"><i class="fas fa-user-graduate"></i></a>
   </div>
   <nav>
     <a href="#about">About</a>
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
+    <a href="#interests">Interests</a>
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
@@ -140,35 +94,23 @@
       <p>I am currently pursuing a Ph.D. at IIT Bombay, where I specialize in drug discovery using artificial intelligence. My research is at the intersection of AI and biomedicine, where I am focused on leveraging cutting-edge technologies such as generative AI, deep learning, and machine learning to revolutionize the way we discover and develop new drugs. In my current work, I aim to accelerate the drug discovery process by developing AI-driven models that can predict potential drug candidates, optimize drug design, and simulate drug interactions with unprecedented accuracy. My goal is to contribute to the development of personalized medicine and innovative treatments that can make a tangible difference in healthcare.</p>
     </div>
   </section>
-
-    <section id="about">
-    <h2 class="section-title">Research Area</h2>
-    <div class="card about-text">
-           
-   
-           <div >Generative AI</div>
- <div >RNA Therapeutics</div>
-           <div >Large Language Model</div>
-           <div >Anti Sense Oligonucleotide</div>
-
-       
-     </div>
+  <section id="research-area">
+    <h2 class="section-title">Research Areas</h2>
+    <div class="card">
+      <ul>
+        <li>Generative AI</li>
+        <li>RNA Therapeutics</li>
+        <li>Large Language Models</li>
+        <li>Anti Sense Oligonucleotide</li>
+      </ul>
+    </div>
   </section>
   <section id="education">
     <h2 class="section-title">Education</h2>
     <div class="grid-2">
-      <div class="card">
-        <h3>PhD, AI</h3>
-        <p><strong>Indian Institute Of Technology, Bombay</strong> (2024–2028)</p>
-      </div>
-      <div class="card">
-        <h3>M.Tech, AI</h3>
-        <p><strong>Delhi Technological University</strong> (2022–2024)</p>
-      </div>
-      <div class="card">
-        <h3>B.Tech, ECE</h3>
-        <p><strong>Guru Gobind Singh Indraprastha University</strong> (2018–2022)</p>
-      </div>
+      <div class="card"><h3>PhD, AI</h3><p><strong>Indian Institute Of Technology, Bombay</strong> (2024–2028)</p></div>
+      <div class="card"><h3>M.Tech, AI</h3><p><strong>Delhi Technological University</strong> (2022–2024)</p></div>
+      <div class="card"><h3>B.Tech, ECE</h3><p><strong>Guru Gobind Singh Indraprastha University</strong> (2018–2022)</p></div>
     </div>
   </section>
   <section id="skills">
@@ -189,107 +131,28 @@
       <div class="skill-item">Predictive Modelling</div>
     </div>
   </section>
+ 
   <section id="research">
     <h2 class="section-title">Research Work</h2>
-    <div class="card">
-      <h3>PhD Thesis: Drug Discovery Using AI</h3>
-      <p><em>Present</em></p>
-      <p>Developing a platform to identify drug candidates through advanced artificial methods, facilitating rapid compound screening, predicting efficacy based on chemical structure, and generating potential lead drug compounds.</p>
-      <p><strong>Skills Used:</strong> Generative AI, Machine Learning, Deep Learning, Molecular Modeling</p>
-    </div>
-    <div class="card">
-      <h3>M.Tech Thesis: Advancing Visual Narration Through Transformers</h3>
-      <p><em>May 2024</em></p>
-      <p>Conducted in-depth research on the development of a novel deep learning architecture for generating textual descriptions from images by utilizing generative AI techniques, including Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), transformers, and GANs.</p>
-      <p><strong>Skills Used:</strong> Computer Vision, NLP, Deep Learning, Transformers, Large Language Models</p>
-    
-    </div>
+    <div class="card"><h3>PhD Thesis: Drug Discovery Using AI</h3><p><em>Present</em></p><p>Developing a platform to identify drug candidates through advanced artificial methods, facilitating rapid compound screening, predicting efficacy based on chemical structure, and generating potential lead drug compounds.</p><p><strong>Skills Used:</strong> Generative AI, Machine Learning, Deep Learning, Molecular Modeling</p></div>
+    <div class="card"><h3>M.Tech Thesis: Advancing Visual Narration Through Transformers</h3><p><em>May 2024</em></p><p>Conducted in-depth research on the development of a novel deep learning architecture for generating textual descriptions from images using CNNs, RNNs, transformers, and GANs.</p><p><strong>Skills Used:</strong> Computer Vision, NLP, Deep Learning, Transformers, Large Language Models</p></div>
   </section>
   <section id="publications">
     <h2 class="section-title">Publications</h2>
-    <div class="card">
-      <h3>Enhancing Image Captioning with Transformers and EfficientNet for Fine-Grained Detail Inclusion</h3>
-      <p><strong>Authors:</strong> Shubham Thakur, Dr. Aruna Bhat</p>
-      <p><strong>Journal:</strong> AIP Conference Proceeding, 2024</p>
-      <a href="#" class="minimal-link">Read Paper</a>
-    </div>
-    <div class="card">
-      <h3>Textualizing Images: A Comprehensive Review of Image Captioning Using Deep Learning</h3>
-      <p><strong>Authors:</strong> Shubham Thakur, Dr. Aruna Bhat</p>
-      <p><strong>Journal:</strong> AIP Conference Proceeding, 2024</p>
-      <a href="#" class="minimal-link">Read Paper</a>
-    </div>
-    <div class="card">
-      <h3>Generating Textual Description Of Image Using Various Deep Learning Techniques</h3>
-      <p><strong>Authors:</strong> Shubham Thakur</p>
-      <p><strong>Journal:</strong> ArXiV, 2024</p>
-      <a href="#" class="minimal-link">Read Paper</a>
-    </div>
-    <div class="card">
-      <h3>Cross-Tissue Biomarkers for Hepatitis B Virus-Related Hepatocellular Carcinoma: A Comparative Study of Blood and Liver Transcriptomics</h3>
-      <p><strong>Authors:</strong> Shubham Thakur</p>
-      <p><strong>Journal:</strong> BioRxiv, 2024</p>
-      <a href="#" class="minimal-link">Read Paper</a>
-    </div>
+    <div class="card"><h3>Enhancing Image Captioning with Transformers and EfficientNet for Fine-Grained Detail Inclusion</h3><p><strong>Authors:</strong> Shubham Thakur, Dr. Aruna Bhat</p><p><strong>Journal:</strong> AIP Conference Proceeding, 2024</p><a href="#" class="minimal-link">Read Paper</a></div>
+    <div class="card"><h3>Textualizing Images: A Comprehensive Review of Image Captioning Using Deep Learning</h3><p><strong>Authors:</strong> Shubham Thakur, Dr. Aruna Bhat</p><p><strong>Journal:</strong> AIP Conference Proceeding, 2024</p><a href="#" class="minimal-link">Read Paper</a></div>
+    <div class="card"><h3>Generating Textual Description Of Image Using Various Deep Learning Techniques</h3><p><strong>Authors:</strong> Shubham Thakur</p><p><strong>Journal:</strong> ArXiV, 2024</p><a href="#" class="minimal-link">Read Paper</a></div>
+    <div class="card"><h3>Cross-Tissue Biomarkers for Hepatitis B Virus-Related Hepatocellular Carcinoma</h3><p><strong>Authors:</strong> Shubham Thakur</p><p><strong>Journal:</strong> BioRxiv, 2024</p><a href="#" class="minimal-link">Read Paper</a></div>
   </section>
   <section id="projects">
     <h2 class="section-title">Project Work</h2>
-    <div class="card project-content">
-      <img src="assets/logo/drug.png" alt="AI-Driven Drug Discovery" class="project-image">
-      <div>
-        <h4>AI-Driven Drug Discovery Platform</h4>
-        <p>Developed a platform to identify drug candidates using machine learning algorithms, facilitating lead generation and compound screening.</p>
-        <a href="#" class="minimal-link">GitHub Repository</a>
-      </div>
-    </div>
-    <div class="card project-content">
-      <img src="assets/logo/medical.png" alt="Automated Skin Cancer Diagnosis with DenseNet" class="project-image">
-      <div>
-        <h4>Automated Skin Cancer Diagnosis with DenseNet</h4>
-        <p>Deep learning model based on DenseNet architecture for classifying skin lesions as malignant or benign, aiding dermatology diagnostics.</p>
-        <a href="https://github.com/shubhamtkr/MelignantBenignDetectionUsingDenseNet" class="minimal-link" target="_blank">GitHub Repository</a>
-      </div>
-    </div>
-    <div class="card project-content">
-      <img src="assets/logo/recommander.png" alt="Fashion Search Engine" class="project-image">
-      <div>
-        <h4>Fashion Search Engine (Recommender System)</h4>
-        <p>Built a recommender system using matrix factorization, cleaned large clothing dataset, and optimized algorithms for trend analysis.</p>
-        <a href="https://github.com/shubhamtkr/FashionSearchEngine" class="minimal-link" target="_blank">GitHub Repository</a>
-      </div>
-    </div>
-    <div class="card project-content">
-      <img src="assets/logo/NER.png" alt="Automated Candidate Evaluation" class="project-image">
-      <div>
-        <h4>Automated Candidate Evaluation using NER</h4>
-        <p>Resume screening system using Named Entity Recognition to extract candidate information and streamline hiring process.</p>
-        <a href="https://github.com/shubhamtkr/NER-based-automated-Resume-shortlisting" class="minimal-link" target="_blank">GitHub Repository</a>
-      </div>
-    </div>
-    <div class="card project-content">
-      <img src="assets/logo/traffic.png" alt="Traffic Forecasting with GRU" class="project-image">
-      <div>
-        <h4>GRU-based Method for Accurate Traffic Forecasting</h4>
-        <p>Developed GRU model leveraging historical traffic data to improve flow prediction accuracy for transportation planning.</p>
-        <a href="https://github.com/shubhamtkr/TrafficPredictionGRU" class="minimal-link" target="_blank">GitHub Repository</a>
-      </div>
-    </div>
-    <div class="card project-content">
-      <img src="assets/logo/intelligentVehical.png" alt="Intelligent Vehicle Using Image Processing" class="project-image">
-      <div>
-        <h4>Intelligent Vehicle Using Image Processing</h4>
-        <p>Path detection algorithm optimized for low-memory devices (Raspberry Pi) using OpenCV for autonomous navigation.</p>
-        <a href="https://github.com/shubhamtkr/autonomous-Vehical-CV2" class="minimal-link" target="_blank">GitHub Repository</a>
-      </div>
-    </div>
-    <div class="card project-content">
-      <img src="assets/logo/ipfs.png" alt="IPFS Based Data Storage Application" class="project-image">
-      <div>
-        <h4>IPFS Based Data Sharing And Storing Application</h4>
-        <p>Decentralized platform using IPFS protocol for secure and efficient data storage and sharing.</p>
-        <a href="https://github.com/shubhamtkr/IPFS_Based_Storage" class="minimal-link" target="_blank">GitHub Repository</a>
-      </div>
-    </div>
+    <div class="card project-content"><img src="assets/logo/drug.png" alt="AI-Driven Drug Discovery" class="project-image"><div><h4>AI-Driven Drug Discovery Platform</h4><p>Developed a platform to identify drug candidates using machine learning algorithms, facilitating lead generation and compound screening.</p><a href="#" class="minimal-link">GitHub Repository</a></div></div>
+    <div class="card project-content"><img src="assets/logo/medical.png" alt="Automated Skin Cancer Diagnosis with DenseNet" class="project-image"><div><h4>Automated Skin Cancer Diagnosis with DenseNet</h4><p>Deep learning model based on DenseNet architecture for classifying skin lesions as malignant or benign, aiding dermatology diagnostics.</p><a href="https://github.com/shubhamtkr/MelignantBenignDetectionUsingDenseNet" class="minimal-link" target="_blank">GitHub Repository</a></div></div>
+    <div class="card project-content"><img src="assets/logo/recommander.png" alt="Fashion Search Engine" class="project-image"><div><h4>Fashion Search Engine (Recommender System)</h4><p>Built a recommender system using matrix factorization, cleaned large clothing dataset, and optimized algorithms for trend analysis.</p><a href="https://github.com/shubhamtkr/FashionSearchEngine" class="minimal-link" target="_blank">GitHub Repository</a></div></div>
+    <div class="card project-content"><img src="assets/logo/NER.png" alt="Automated Candidate Evaluation" class="project-image"><div><h4>Automated Candidate Evaluation using NER</h4><p>Resume screening system using Named Entity Recognition to extract candidate information and streamline hiring process.</p><a href="https://github.com/shubhamtkr/NER-based-automated-Resume-shortlisting" class="minimal-link" target="_blank">GitHub Repository</a></div></div>
+    <div class="card project-content"><img src="assets/logo/traffic.png" alt="Traffic Forecasting with GRU" class="project-image"><div><h4>GRU-based Method for Accurate Traffic Forecasting</h4><p>Developed GRU model leveraging historical traffic data to improve flow prediction accuracy for transportation planning.</p><a href="https://github.com/shubhamtkr/TrafficPredictionGRU" class="minimal-link" target="_blank">GitHub Repository</a></div></div>
+    <div class="card project-content"><img src="assets/logo/intelligentVehical.png" alt="Intelligent Vehicle Using Image Processing" class="project-image"><div><h4>Intelligent Vehicle Using Image Processing</h4><p>Path detection algorithm optimized for low-memory devices (Raspberry Pi) using OpenCV for autonomous navigation.</p><a href="https://github.com/shubhamtkr/autonomous-Vehical-CV2" class="minimal-link" target="_blank">GitHub Repository</a></div></div>
+    <div class="card project-content"><img src="assets/logo/ipfs.png" alt="IPFS Based Data Storage Application" class="project-image"><div><h4>IPFS Based Data Sharing And Storing Application</h4><p>Decentralized platform using IPFS protocol for secure and efficient data storage and sharing.</p><a href="https://github.com/shubhamtkr/IPFS_Based_Storage" class="minimal-link" target="_blank">GitHub Repository</a></div></div>
   </section>
   <section id="teaching">
     <h2 class="section-title">Teaching Assistantship</h2>
@@ -304,9 +167,7 @@
   </section>
   <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:shubhamt311@gmail.com">shubhamt311@gmail.com</a></p>
-    </div>
+    <div class="card"><p>Email: <a href="mailto:shubhamt311@gmail.com">shubhamt311@gmail.com</a></p></div>
   </section>
 </main>
 <footer>
